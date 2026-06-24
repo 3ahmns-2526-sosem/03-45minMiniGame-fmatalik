@@ -5,7 +5,13 @@ public class Triangle : MonoBehaviour
 {
     public TextMeshProUGUI counter;
     private int clickCounter;
-    private int limit;
+    private int limit = 10;
+    public TextMeshProUGUI winText;
+
+    private void Start()
+    {
+        winText.enabled = false;
+    }
 
     private void OnMouseDown()
     {
@@ -18,7 +24,8 @@ public class Triangle : MonoBehaviour
 
         if (clickCounter == limit)
         {
-            counter.text = "Click Counter: 10";
+            counter.enabled = false;
+            winText.enabled = true;
         }
     }
 }
