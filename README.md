@@ -1,6 +1,2 @@
-# 03-helloGH-fmatalik
-hallo
-
-Markdown Cheatsheet: https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet
-
-hello Github
+# 03-45minMiniGame-fmatalik
+a Game made in 45 Minutes
