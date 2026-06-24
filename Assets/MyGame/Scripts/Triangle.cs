@@ -3,8 +3,9 @@ using TMPro;
 
 public class Triangle : MonoBehaviour
 {
-    private TextMeshProUGUI counter;
+    public TextMeshProUGUI counter;
     private int clickCounter;
+    private int limit;
 
     private void OnMouseDown()
     {
@@ -14,5 +15,10 @@ public class Triangle : MonoBehaviour
     private void Update()
     {
         counter.text = "Click Counter: " + clickCounter.ToString();
+
+        if (clickCounter == limit)
+        {
+            counter.text = "Click Counter: 10";
+        }
     }
 }
